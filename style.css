@@ -21,9 +21,10 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.95);
   z-index: 1000;
   padding: 15px 0;
+  backdrop-filter: blur(10px);
 }
 .nav-inner {
   display: flex;
@@ -33,10 +34,42 @@ body {
 .nav-links {
   display: flex;
   gap: 25px;
+
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  margin-top: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 180px;
+  z-index: 2000;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.dropdown-menu a {
+  display: block;
+  padding: 8px 20px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.dropdown-menu a:hover {
+  background: #f2f2f2;
+  
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 .nav-links a {
   text-decoration: none;
-  color: #ffffffff;
+  color: #0c0707ff;
   font-weight: 900;
   transition: 0.2s;
 }
@@ -68,7 +101,7 @@ body {
 
 .hero {
   height: 100vh;
-  background: url("https://refactory.academy/wp-content/uploads/2025/08/MAL_6566.jpeg")
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://refactory.academy/wp-content/uploads/2025/08/0G2A8223-1536x1024.jpg")
     center/cover no-repeat;
   position: relative;
   display: flex;
@@ -144,32 +177,29 @@ body {
   flex: 1;
 }
 
-.academy-content h2{
-    color: purple;
-    font-size: 32px;
-    margin-bottom: 10px;
-  
+.academy-content h2 {
+  color: purple;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-.academy-content h3{
-    color: rgba(54, 130, 153, 1);
-    font-size: 22px;
-    margin-bottom: 20px;
-  
+.academy-content h3 {
+  color: rgba(54, 130, 153, 1);
+  font-size: 22px;
+  margin-bottom: 20px;
 }
-.academy-content p{
-    color: rgb(44, 43, 43);
-    margin-bottom: 20px;
-  
+.academy-content p {
+  color: rgb(44, 43, 43);
+  margin-bottom: 20px;
 }
-.academy-image{
-    flex:1;
+.academy-image {
+  flex: 1;
 }
-.academy-image img{
-    width: 100%;
-    max-height: 200%;
-    
-    object-fit: cover;
+.academy-image img {
+  width: 100%;
+  max-height: 200%;
 
-    /* display: block; */
+  object-fit: cover;
+
+  /* display: block; */
 }
