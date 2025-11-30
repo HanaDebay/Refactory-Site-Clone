@@ -128,20 +128,30 @@ body {
 }
 .btn {
   display: inline-block;
-  padding: 8px 30px;
+  padding: 15px 30px;
   margin: 5px;
-  border-radius: 6%;
+  border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.25s;
 }
 .btn.purple {
-  background: purple;
+  background: #6B2D8F;
   color: #fff;
 }
 .btn.yellow {
-  background: rgb(218, 206, 37);
+  background: #C0FF33;
   color: #fff;
+}
+.btn.btn-course{
+  background: #e1e431ff;
+   color: white;
+
+}
+
+.btn.btn-course:hover{
+  background: #080349ff;
+ 
 }
 
 .btn.white {
@@ -178,8 +188,9 @@ body {
 }
 
 .academy-content h2 {
-  color: purple;
+  color: #6B2D8F;
   font-size: 32px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -191,6 +202,7 @@ body {
 .academy-content p {
   color: rgb(44, 43, 43);
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 .academy-image {
   flex: 1;
@@ -201,5 +213,25 @@ body {
 
   object-fit: cover;
 
-  /* display: block; */
+}
+.course-card img{
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+
+}
+h5.heading-text{
+  color: #6B2D8F;
+  font-weight: bold;
+}
+.courses-wrapper{
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h4{
+  color: #00BFA5;
+}
+.course-heading{
+  color: #6B2D8F;
 }
