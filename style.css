@@ -235,3 +235,44 @@ h4{
 .course-heading{
   color: #6B2D8F;
 }
+
+.footer-section{
+  background:#2C1A4D ;
+  position: relative;
+}
+.footer-links li{
+  margin-bottom: 8px;
+  list-style: none;
+}
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-links a:hover{
+  color:#ffffff
+}
+
+.social-icons a{
+  font-size: 1.4rem;
+   color:#ffffff
+}
+.facebook{
+  color: #3b5998;
+}
+.twitter{
+  color: #3b5998;;
+}
+.instagram{
+  color: #E1306C;
+}
+.linkedin{
+  color: #0e76a8;
+}
+.youtube{
+  color: #FF0000;
+}
+.footer-headings{
+  color: rgb(45, 238, 238);
+  font-weight: bold;
+}
